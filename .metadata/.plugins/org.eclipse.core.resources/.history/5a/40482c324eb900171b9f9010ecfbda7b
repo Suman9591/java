@@ -1,0 +1,30 @@
+package com.sg.dao;
+
+import java.sql.Connection;
+import java.util.Map;
+import java.util.ResourceBundle;
+
+import com.sg.vo.Question;
+
+public class ExamDaoImpl implements IExamDao{
+    public static ResourceBundle rb = ResourceBundle.getBundle("sg");
+    static{
+    	try {
+			Class.forName(rb.getString("driver"));
+		} catch (ClassNotFoundException e) {
+			
+			e.printStackTrace();
+		}
+    }
+	@Override
+	public Map<Integer, Question> getQuestions() {
+		return null;
+	}
+	public void closeConn(Connection conn){
+		if(conn != null){
+			conn.close();
+		}
+	}
+	
+
+}

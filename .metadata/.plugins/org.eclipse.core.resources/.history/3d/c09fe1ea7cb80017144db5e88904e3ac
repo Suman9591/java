@@ -1,0 +1,17 @@
+package com.sg.client;
+
+import com.sg.service.Emp;
+import com.sg.service.Onroll;
+
+public class ClientA {
+
+	public static void main(String[] args) {
+		Emp[] arr = new Emp[4];
+		arr[0] = new Onroll(1001,"ram",15000,2000);
+		arr[1] = new Onroll(1002,"harry",25000,5000);
+		arr[2] = new Onroll(1003,"tom",5000,100);
+		arr[3] = new Onroll(1004,"rahi",3000,200);
+
+	}
+
+}

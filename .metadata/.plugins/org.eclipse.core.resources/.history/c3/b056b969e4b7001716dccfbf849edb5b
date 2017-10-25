@@ -1,0 +1,11 @@
+package com.sg.ui;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class IntFrm {
+	JFrame jf;
+	JPanel jp1;
+	JPanel jp2;
+
+}

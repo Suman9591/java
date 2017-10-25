@@ -1,0 +1,17 @@
+package com.sg.client;
+
+import com.sg.service.Emp;
+
+public class clientB {
+
+	public static void main(String[] args) {
+		Emp e1 = new Emp(1001, "ram");
+		
+			
+		e1 = null;
+		System.gc();
+		
+
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.sg.service;
+
+public abstract interface Atm {
+	void deposit();
+	void withdraw();
+	void getBalance();
+
+}

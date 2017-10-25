@@ -1,0 +1,22 @@
+package com.pack1;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Vector;
+
+public class Demo3 {
+
+	public static void main(String[] args) {
+		List<String> lst = new LinkedList();
+		lst.add("Tom");
+		lst.add("Dik");
+		lst.add("Harry");
+		lst.add("Sunny");
+		lst.add("Maddy");
+		List<String> lst2 = new ArrayList<>();
+		System.out.println(lst);
+
+	}
+
+}

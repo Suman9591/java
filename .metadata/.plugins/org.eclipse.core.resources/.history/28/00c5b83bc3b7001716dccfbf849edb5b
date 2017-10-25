@@ -1,0 +1,9 @@
+package com.sg.client;
+
+public class SalesClient {
+
+	public static void main(String[] args) {
+
+	}
+
+}

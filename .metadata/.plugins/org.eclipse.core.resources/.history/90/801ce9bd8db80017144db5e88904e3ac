@@ -1,0 +1,24 @@
+package com.sg.service;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.List;
+
+import com.sg.vo.Emp;
+
+public class EmpFileDao implements Idao{
+
+	@Override
+	public List<Emp> getEmployee() {
+		
+		FileReader fr = null;
+		BufferedReader br = null;
+		try{
+			
+		}catch(Exception e){
+			System.out.println(e.getMessage());
+		}
+		return null;
+	}
+
+}

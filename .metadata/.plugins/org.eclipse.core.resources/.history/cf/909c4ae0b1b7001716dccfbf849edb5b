@@ -1,0 +1,18 @@
+package com.sg.demos;
+
+public class MyUtil {
+	
+	public static double clacSimple(double p, int n, float r){
+		double si = p*n*r /100;
+		return si;
+	}
+	public static double clacCompound(double p, int n, float r){
+		double ci = p*Math.pow((1+r/100),n) -p;
+		return ci;
+	}
+	public static double round2Dec(double val){
+		val = Math.round(val*100)/100.0;
+		return val;
+	}
+
+}

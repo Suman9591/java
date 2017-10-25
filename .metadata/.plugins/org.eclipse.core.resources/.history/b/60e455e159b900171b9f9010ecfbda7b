@@ -1,0 +1,36 @@
+package com.sg.ui;
+
+import java.util.List;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JRadioButton;
+
+import com.sg.service.ExamSerImpl;
+import com.sg.service.IExamSer;
+import com.sg.vo.Question;
+
+public class QuizUi {
+	
+	JFrame jf;
+	JRadioButton r1,r2,r3;
+	JLabel L1;
+	JButton b1;
+	private IExamSer ser = ExamSerImpl.getExamService();
+	private List<Question> qlist = ser.genQuestions();
+	
+	public QuizUi(){
+		L1 = new JLabel(qlist.get(0).getQdesc());
+		r1 = new JRadioButton(qlist.get(0).getOpta());
+		r2 = new JRadioButton(qlist.get(0).getOptb());
+		r3 = new JRadioButton(qlist.get(0).getOptc());
+		b1 = new JButton("next");
+	}
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

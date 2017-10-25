@@ -1,0 +1,9 @@
+package com.sg.util;
+
+public class MyUtil {
+	public static double calcPeri(double radius){
+		double per = 2*Math.PI * radius;
+		return per;
+	}
+
+}

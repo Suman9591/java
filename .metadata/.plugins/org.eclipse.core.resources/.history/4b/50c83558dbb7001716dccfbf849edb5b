@@ -1,0 +1,17 @@
+package com.sg.service;
+
+public class Emp {
+	private int eid;
+	private String ename;
+	public Emp(int eid, String ename) {
+		super();
+		this.eid = eid;
+		this.ename = ename;
+	}
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return eid + " "+ ename;
+	}
+
+}

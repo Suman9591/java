@@ -1,0 +1,20 @@
+package com.sg.service;
+
+import com.sg.util.MyUtil;
+
+public class Interest {
+	public double amount;
+	public int years;
+	public float rate;
+	
+	public double calcSimple(){
+		double si = amount * years* rate/100;
+		return MyUtil.round2Dec(si);
+	}
+	
+	public double calcCompound(){
+		double ci = amount * Math.pow((1+rate/100), years)- amount;
+		return MyUtil.round2Dec(ci);
+	}
+
+}

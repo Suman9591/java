@@ -1,0 +1,6 @@
+package com.sg.dao;
+
+public class ExamDaoImpl implements IExamDao{
+	
+
+}

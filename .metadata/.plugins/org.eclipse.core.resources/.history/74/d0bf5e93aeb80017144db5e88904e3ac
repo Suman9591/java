@@ -1,0 +1,33 @@
+package com.pack1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.pack2.Emp;
+
+public class Demo4 {
+
+	public static void main(String[] args) {
+		Emp e1 = new Emp(1001,"rew",3000);
+		Emp e2 = new Emp(1002,"tew",4000);
+		Emp e3 = new Emp(1003,"gew",5000);
+		Emp e4 = new Emp(1004,"pew",6000);
+		Emp e5 = new Emp(1005,"mew",7000);
+		
+		List<Emp> lst = new ArrayList<Emp>();
+		lst.add(e1);
+		lst.add(e2);
+		lst.add(e3);
+		lst.add(e4);
+		lst.add(e5);
+		
+		Collections.sort(lst);
+		System.out.println("Sort by EID...................");
+		
+		for(Emp emp: lst){
+			System.out.println(emp);
+		}
+
+	}
+
+}

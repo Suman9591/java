@@ -1,0 +1,9 @@
+package com.sg.service;
+
+public interface Atm {
+	public static final int MAX =10;
+	void deposit();
+	void withdraw();
+	void getBalance();
+
+}

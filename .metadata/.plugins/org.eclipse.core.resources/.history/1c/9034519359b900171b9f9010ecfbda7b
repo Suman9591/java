@@ -1,0 +1,10 @@
+package com.sg.ui;
+
+public class QuizUi {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

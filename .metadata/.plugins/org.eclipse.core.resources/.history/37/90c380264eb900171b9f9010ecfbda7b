@@ -1,0 +1,15 @@
+package com.sg.dao;
+
+import java.util.Map;
+
+import com.sg.vo.Question;
+
+public class ExamDaoImpl implements IExamDao{
+
+	@Override
+	public Map<Integer, Question> getQuestions() {
+		return null;
+	}
+	
+
+}

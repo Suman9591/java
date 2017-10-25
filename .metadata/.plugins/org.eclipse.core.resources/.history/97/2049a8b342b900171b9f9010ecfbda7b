@@ -1,0 +1,23 @@
+package com.pack1;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.HashSet;
+import java.util.Set;
+
+import com.pack2.Product;
+
+public class Demo4 {
+
+	public static void main(String[] args) {
+		
+
+	}
+	public static Set<Product> getProducts(){
+		Set<Product> set = new HashSet<Product>();
+		FileReader fr = null;
+		BufferedReader br = null;
+		return set;
+	}
+
+}

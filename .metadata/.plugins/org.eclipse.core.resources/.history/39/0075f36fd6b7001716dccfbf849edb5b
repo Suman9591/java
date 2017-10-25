@@ -1,0 +1,8 @@
+package com.sg.service;
+
+public class NokiaLumia extends Nokia1100{
+	public void browseNet(){
+		
+		System.out.println("browse net");
+	}
+}

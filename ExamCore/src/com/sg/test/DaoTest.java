@@ -1,0 +1,22 @@
+package com.sg.test;
+
+import java.util.Map;
+
+import com.sg.dao.ExamDaoImpl;
+import com.sg.dao.IExamDao;
+import com.sg.vo.Question;
+
+public class DaoTest {
+
+	public static void main(String[] args) {
+		IExamDao dao = ExamDaoImpl.getExamDao();
+		Map<Integer, Question> map = dao.getQuestions();
+		for(Question q: map.values()){
+			System.out.println(q.getQid()+" "+q.getQdesc());
+			System.out.println(q.getOpta()+" "+q.getOptb()+" "+q.getOptc());
+			System.out.println(q.getRes());
+			System.out.println("-------------------------------------------------------------------");
+		}
+	}
+
+}

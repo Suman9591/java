@@ -1,0 +1,18 @@
+package com.sg.demos;
+
+import java.util.Scanner;
+
+public class InterestDemo {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the principle");
+		double amt = scan.nextDouble();
+		System.out.println("Enter the Years");
+		int years = scan.nextInt();
+		System.out.println("Enter the Rate");
+		float rate = scan.nextFloat();
+
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.sg.service;
+
+public class EmpMemDao {
+
+}

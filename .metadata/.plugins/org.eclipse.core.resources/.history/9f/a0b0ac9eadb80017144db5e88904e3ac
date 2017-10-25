@@ -1,0 +1,16 @@
+package com.pack1;
+
+import com.pack2.Emp;
+
+public class Demo4 {
+
+	public static void main(String[] args) {
+		Emp e1 = new Emp(1001,"rew",3000);
+		Emp e2 = new Emp(1002,"rew",4000);
+		Emp e3 = new Emp(1003,"rew",5000);
+		Emp e4 = new Emp(1004,"rew",6000);
+		Emp e5 = new Emp(1005,"rew",7000);
+
+	}
+
+}

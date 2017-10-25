@@ -1,0 +1,6 @@
+package com.sg.service;
+
+public class Emp {
+private String name;
+private int age;
+}

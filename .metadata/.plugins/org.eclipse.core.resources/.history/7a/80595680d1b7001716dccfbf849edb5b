@@ -1,0 +1,12 @@
+package com.sg.client;
+
+import com.sg.service.Mtable;
+
+public class MtableClient {
+
+	public static void main(String[] args) {
+		Mtable obj = new Mtable();
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.sg.service;
+
+import java.util.List;
+
+import com.sg.vo.Question;
+
+public interface IExamSer {
+	private List<Question> genQuestions();
+
+}

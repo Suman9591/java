@@ -1,0 +1,79 @@
+package com.sg.ui;
+
+import java.awt.Container;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.List;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+
+import com.sg.service.ExamSerImpl;
+import com.sg.service.IExamSer;
+import com.sg.vo.Question;
+
+public class QuizUi {
+	
+	JFrame jf;
+	JRadioButton r1,r2,r3;
+	JLabel L1;
+	JButton b1;
+	JPanel jp,jp2;
+	Container ct;
+	private IExamSer ser = ExamSerImpl.getExamService();
+	private List<Question> qlist = ser.genQuestions();
+	private int i=0;
+	
+	public QuizUi(){
+		L1 = new JLabel(qlist.get(0).getQdesc());
+		r1 = new JRadioButton(qlist.get(0).getOpta());
+		r2 = new JRadioButton(qlist.get(0).getOptb());
+		r3 = new JRadioButton(qlist.get(0).getOptc());
+		b1 = new JButton("next");
+		
+		jp = new JPanel();
+		jp.add(L1);
+		jp.add(r1);
+		jp.add(r2);
+		jp.add(r3);
+		jp.setLayout(new GridLayout(4,1,10,10));
+		jp2 = new JPanel();
+		jp2.add(b1);
+		
+		jf = new JFrame("Quiz App");
+		ct = jf.getContentPane();
+		ct.setLayout(new GridLayout(2,1,10,10));
+		ct.add(jp);
+		ct.add(jp2);
+		
+		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		jf.setVisible(true);
+		jf.setSize(300,300);
+		jf.pack();
+		++i;
+		
+	}
+	
+	ActionListener listen1 = new ActionListener() {
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			
+			
+		}
+		
+	};
+		
+		
+	
+
+	public static void main(String[] args) {
+		new QuizUi();
+
+	}
+
+}

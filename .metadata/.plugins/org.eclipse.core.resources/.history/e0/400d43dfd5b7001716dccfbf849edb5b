@@ -1,0 +1,7 @@
+package com.sg.service;
+
+public class NokiaLumia {
+	public void browseNet(){
+		System.out.println("browse net");
+	}
+}

@@ -1,0 +1,7 @@
+package com.sg.service;
+
+public abstract class Emp {
+   private int eid;
+   private String ename;
+   private double sal;
+}

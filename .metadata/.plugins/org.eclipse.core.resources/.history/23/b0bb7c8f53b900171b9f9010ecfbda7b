@@ -1,0 +1,27 @@
+package com.sg.service;
+
+import java.util.List;
+import java.util.Map;
+
+import com.sg.dao.ExamDaoImpl;
+import com.sg.dao.IExamDao;
+import com.sg.vo.AnswerObject;
+import com.sg.vo.Question;
+
+public class ExamSerImpl implements IExamSer{
+	
+	private static Map<Integer, Question> qmap;
+    private IExamDao dao = ExamDaoImpl.getExamDao();
+	@Override
+	public List<Question> genQuestions() {
+		if(qmap == null)
+			qmap = dao.getQuestions();
+		return null;
+	}
+
+	@Override
+	public int getScore(Map<Integer, AnswerObject> amap) {
+		return 0;
+	}
+
+}

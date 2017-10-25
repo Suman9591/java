@@ -1,0 +1,47 @@
+package com.pack1;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.HashSet;
+import java.util.Set;
+
+import com.pack2.Product;
+
+public class Demo4 {
+
+	public static void main(String[] args) {
+		String[] arr = {"p1.txt","p2.txt"};
+		Set<Product> set = getProducts(arr);
+		for(Product p:set){
+			System.out.println(p);
+		}
+
+	}
+	public static Set<Product> getProducts(String[] arr){
+		Set<Product> set = new HashSet<Product>();
+		FileReader fr = null;
+		BufferedReader br = null;
+		String[] parr = null;
+		Product prod = null;
+		String str = null;
+	
+		try{
+			for(String fname: arr){
+				fr = new FileReader(fname);
+				br = new BufferedReader(fr);
+				while((str = br.readLine())!= null){
+					parr = str.split(",");
+					prod = new Product(Integer.parseInt(parr[0] ),parr[1],Double.parseDouble(parr[2]));
+					set.add(prod);
+				}
+				br.close();
+				fr.close();
+			}
+		}
+		catch(Exception e){
+			System.out.println(e.getMessage());
+		}
+		return set;
+	}
+
+}
